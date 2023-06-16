@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "antlr4": "4.7.2"
+    "dom-serialize": "^2.2.1",
+    "htmlparser2": "^9.0.0"
   }
 }
