@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "dom-serialize": "^2.2.1",
-    "htmlparser2": "^9.0.0"
+    "htmlparser2": "^9.0.0",
+    "radash": "^10.9.0"
   }
 }
