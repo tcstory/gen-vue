@@ -2,16 +2,16 @@
   "version": "0.1.0",
   "schema": {
     "properties": {
-      "@page/basic": {
+      "@aomi/proTable": {
         "type": "void",
-        "x-component": "@page/proTable",
+        "x-component": "@aomi/proTable",
         "x-component-props": {
           "class": "my-pro-table"
         },
         "properties": {
-          "@page/components/tableSearch": {
+          "@aomi/proTable/components/search": {
             "type": "void",
-            "x-component": "@page/components/tableSearch",
+            "x-component": "@aomi/proTable/components/search",
             "properties": {
               "name": {
                 "x-component": "element-ui/input",
@@ -48,6 +48,12 @@
                   ]
                 }
               }
+            }
+          },
+          "@aomi/proTable/components/pagination": {
+            "type": "void",
+            "x-component": "@aomi/proTable/components/pagination",
+            "x-component-props": {
             }
           }
         }
