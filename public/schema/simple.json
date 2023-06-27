@@ -12,6 +12,9 @@
           "@aomi/proTable/components/search": {
             "type": "void",
             "x-component": "@aomi/proTable/components/search",
+            "x-component-props": {
+              "ref": "searchForm"
+            },
             "properties": {
               "name": {
                 "x-component": "element-ui/input",
@@ -54,6 +57,26 @@
             "type": "void",
             "x-component": "@aomi/proTable/components/pagination",
             "x-component-props": {
+              "currentPage": {
+                "bind": "pageNum",
+                "modifiers": "sync"
+              },
+              "pageSizes": {
+                "bind": "[10, 20, 30]"
+              },
+              "pageSize": {
+                "bind": "pageSize"
+              },
+              "layout": "total, sizes, prev, pager, next, jumper",
+              "total": {
+                "bind": "totalCount"
+              },
+              "@sizeChange": {
+                "bind": "handleSizeChange"
+              },
+              "@currentChange": {
+                "bind": "handleCurrentChange"
+              }
             }
           }
         }
