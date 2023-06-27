@@ -35,23 +35,26 @@
                 "x-component": "element-ui/select",
                 "x-component-props": {
                   "label": "Store Status",
-                  "options": [
-                    {
-                      "id": 1,
-                      "label": "status1",
-                      "value": "value1"
-                    },
-                    {
-                      "id": 2,
-                      "label": "status2",
-                      "value": "value2"
-                    },
-                    {
-                      "id": 3,
-                      "label": "status3",
-                      "value": "value3"
-                    }
-                  ]
+                  "options": {
+                    "key": "search.storeStatusOptions",
+                    "value": [
+                      {
+                        "id": 1,
+                        "label": "status1",
+                        "value": "value1"
+                      },
+                      {
+                        "id": 2,
+                        "label": "status2",
+                        "value": "value2"
+                      },
+                      {
+                        "id": 3,
+                        "label": "status3",
+                        "value": "value3"
+                      }
+                    ]
+                  }
                 }
               }
             }
