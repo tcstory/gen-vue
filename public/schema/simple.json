@@ -3,6 +3,10 @@
   "schema": {
     "properties": {
       "x-component": "@page/basic",
+      "x-component-props": {
+        "id": "app",
+        "class": "my-app"
+      },
       "x-component-slots": [
         {
           "x-component-slot-name": "pro-table-search",
@@ -14,13 +18,13 @@
               }
             },
             "password": {
-              "x-component": "input",
+              "x-component": "element-ui/input",
               "x-component-props": {
                 "label": "Store Name"
               }
             },
             "storeStatus": {
-              "x-component": "select",
+              "x-component": "element-ui/select",
               "x-component-props": {
                 "label": "Store Status",
                 "options": [
