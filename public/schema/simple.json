@@ -16,19 +16,22 @@
               "ref": "searchForm"
             },
             "properties": {
-              "name": {
+              "search.name": {
+                "x-default-value": "",
                 "x-component": "element-ui/input",
                 "x-component-props": {
                   "label": "Store Id"
                 }
               },
-              "password": {
+              "search.password": {
+                "x-default-value": "",
                 "x-component": "element-ui/input",
                 "x-component-props": {
                   "label": "Store Name"
                 }
               },
-              "storeStatus": {
+              "search.storeStatus": {
+                "x-default-value": "value1",
                 "x-component": "element-ui/select",
                 "x-component-props": {
                   "label": "Store Status",
