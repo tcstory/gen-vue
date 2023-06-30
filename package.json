@@ -16,7 +16,7 @@
     "@babel/traverse": "^7.21.4",
     "dom-serialize": "^2.2.1",
     "htmlparser2": "^9.0.0",
-    "radash": "^10.9.0"
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "eslint": "^8.43.0",
