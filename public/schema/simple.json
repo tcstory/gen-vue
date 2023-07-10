@@ -17,21 +17,21 @@
             },
             "properties": {
               "search.name": {
-                "x-default-value": "",
+                "x-value": "",
                 "x-component": "element-ui/input",
                 "x-component-props": {
                   "label": "Store Id"
                 }
               },
               "search.password": {
-                "x-default-value": "",
+                "x-value": "",
                 "x-component": "element-ui/input",
                 "x-component-props": {
                   "label": "Store Name"
                 }
               },
               "search.storeStatus": {
-                "x-default-value": "value1",
+                "x-value": "value1",
                 "x-component": "element-ui/select",
                 "x-component-props": {
                   "label": "Store Status",
@@ -64,24 +64,29 @@
             "x-component": "@aomi/proTable/components/pagination",
             "x-component-props": {
               "currentPage": {
-                "bind": "pageNum",
+                "key": "pageNum",
+                "value": 1,
                 "modifiers": "sync"
               },
               "pageSizes": {
-                "bind": "[10, 20, 30]"
+                "value": [10, 20, 30]
               },
               "pageSize": {
-                "bind": "pageSize"
+                "key": "pageSize",
+                "value": 10
               },
-              "layout": "total, sizes, prev, pager, next, jumper",
+              "layout": {
+                "value": "total, sizes, prev, pager, next, jumper"
+              },
               "total": {
-                "bind": "totalCount"
+                "key": "totalCount",
+                "value": -1
               },
               "@sizeChange": {
-                "bind": "handleSizeChange"
+                "value": "handleSizeChange"
               },
               "@currentChange": {
-                "bind": "handleCurrentChange"
+                "value": "handleCurrentChange"
               }
             }
           }
